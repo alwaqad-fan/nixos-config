@@ -9,7 +9,7 @@
       ./services.nix
       ./users.nix
 
-      ./hardware-configuration.nix
+      ./hardware.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
