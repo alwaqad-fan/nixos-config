@@ -9,8 +9,7 @@
       ./shell.nix
       ./services.nix
       ./users.nix
-      ./WMs/hyprland.nix
-      ./WMs/plasma.nix
+      ./WMs
 
       ./hardware.nix
     ];

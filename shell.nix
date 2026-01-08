@@ -9,6 +9,7 @@
         {
           ll = "ls -alh";
           la = "ls -a";
+          bt = "sudo nixos-rebuild test";
           bs = "sudo nixos-rebuild switch";
           bsr = "sudo nixos-rebuild switch --rollback";
           sudo-cursor = "sudo cursor --no-sandbox --user-data-dir /tmp/cursor_user_data";
