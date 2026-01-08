@@ -3,6 +3,7 @@
 {
 
    services.desktopManager.plasma6.enable = true;
+
    environment.plasma6.excludePackages = with pkgs.kdePackages;
     [
       kate
@@ -10,5 +11,10 @@
       konsole
       plasma-browser-integration
     ];
+
+    environment.systemPackages = with pkgs.kdePackages;
+      [
+        kwrited
+      ];
 
 }
