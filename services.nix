@@ -4,22 +4,9 @@
 
   services =
     {
-      xserver =
-        {
-          enable = true;
-          excludePackages =
-            [
-              pkgs.xterm
-            ];
-          xkb =
-            {
-              layout = "us";
-              variant = "";
-            };
-        };
+      xserver.enable = false;
 
       displayManager.sddm.enable = true;
-      desktopManager.plasma6.enable = true;
 
       printing.enable = false;
       

@@ -14,14 +14,6 @@
           nodejs
           telegram-desktop
         ];
-
-      plasma6.excludePackages = with pkgs.kdePackages;
-        [
-          kate
-          khelpcenter
-          konsole
-          plasma-browser-integration
-        ];
     };
 
 }

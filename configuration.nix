@@ -4,19 +4,19 @@
   
   imports =
     [
+      ./networking.nix
       ./packages.nix
       ./shell.nix
       ./services.nix
       ./users.nix
+      ./WMs/hyprland.nix
+      ./WMs/plasma.nix
 
       ./hardware.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Helsinki";
 
@@ -35,6 +35,8 @@
     };
 
   security.rtkit.enable = true;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   nixpkgs.config =
     {
