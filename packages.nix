@@ -7,10 +7,10 @@
       systemPackages = with pkgs;
         [
           alacritty
+          audacity
           brave
           burpsuite
           code-cursor
-          davinci-resolve
           dirb
           fastfetch
           nmap
